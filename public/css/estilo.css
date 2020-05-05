@@ -1,0 +1,255 @@
+body {
+    background: #191919;
+}
+
+#container {
+    margin: 0px 0px 0px 150px;
+}
+
+.plus {
+    width: 40px;
+    height: 40px;
+    margin-left: 150px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+table {
+    background: rgb(255, 187, 0);
+    font-size: 1.45em;
+    border-radius: 3px;
+    border: solid;
+    margin-left: 150px;
+}
+
+table tr a {
+    text-decoration: none;
+    color: black;
+}
+
+table th {
+    border-color: rgb(0, 0, 0);
+    border: solid;
+}
+
+table td #descricao{
+    width: 160px;
+}
+
+table td {
+    width: auto;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+}
+
+h1 {
+    margin-left: 350px;
+    color: rgb(255, 187, 0);
+    font-size: 2.2em;
+}
+
+/*INICIO MENU*/
+
+.menu {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(255, 187, 0);
+    margin-left:5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgb(255, 187, 0), 0 0 0 0 rgb(255, 187, 0);
+    transition: box-shadow .5s ease-in-out;
+}
+
+.menu:hover {
+    box-shadow: 0 0 0 3px rgb(255, 187, 0), 0 0 0 3px rgb(255, 187, 0);
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #191919;
+    width: 30px;
+    height: 5px;
+    top: 35px;
+    left: 25px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer::before, .hamburguer::after {
+    background: #191919;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer::before {
+    top: -10px;
+}
+
+.hamburguer::after {
+    bottom: -10px;
+}
+
+#cb {
+    display: none;
+}
+
+#cb:checked ~ div {
+    opacity: 1;
+}
+
+#cb:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+#cb:checked ~ label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#cb:checked ~ label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+#popup {
+    background: rgb(255, 187, 0);
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    padding-top: 10px;
+    margin: -100px 0 0 110px;
+    display: grid;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0;
+    cursor: none;
+    transition: .25s .25s ease-in-out;
+}
+
+#popup a {
+    font-size: 1.35em;
+    color: #191919;
+    text-decoration: none;
+}
+
+#popup a:hover {
+    color: rgb(224, 224, 224);
+}
+
+/*FIM MENU*/
+
+/*INICIO PAGINA CADASTRO PRODUTOS*/
+
+form, label {
+  display: block;
+  padding: 10px;
+}
+
+form {
+  width: 190px;
+  margin: 0px 0px 50px 400px;
+  background-color: rgb(255, 187, 0);
+  border-radius: 4px;
+}
+
+label {
+  color: #191919;
+  font-weight: bold;
+}
+
+input {
+  display: inline-block;
+  padding-left: 10px;
+  background: rgb(224, 224, 224);
+  border-color: #191919;
+  border-radius: 5px;
+}
+
+input::placeholder{
+    color: #191919;
+    font-style: italic;
+}
+
+#cadastro {
+    margin: 5px 0 10px 50px;
+}
+
+#cadastro:hover {
+    background: #191919;
+    color: rgb(255, 187, 0);
+}
+
+/*FIM PAGINA CADASTRO PRODUTOS*/
+
+/*INICIO PAGINA BUSCA*/
+
+input:focus {
+    outline: 0;
+    border-width: 3px;
+}
+
+.busca:hover {
+    color: rgb(255, 187, 0);
+    background: #191919;
+}
+
+.bus {
+    width: 190px;
+}
+
+#bsc {
+    width: 275px;
+    margin: 10px 0 0 370px;
+}
+
+
+/*FIM PAGINA BUSCA*/
+
+/*INICIO PAGINA CADASTRO USUARIO*/
+
+#cadastroUser {
+    margin: 5px 0 10px 50px;
+}
+
+#cadastroUser:hover {
+    background: #191919;
+    color: #ffbb00;
+}
+
+/*FIM PAGINA CADASTRO USUARIO*/
+
+/*INICIO PAGINA INICIO*/
+
+#inicio h1{
+    margin: 200px 0 0 350px;
+}
+
+/*FIM PAGINA INICIO*/
+
+/*INICIO PAGINA DETALHES*/
+
+#t2 {
+    margin-left: -100px;
+}
+
+.back {
+    margin-left: -100px;
+}
+
+/*FIM PAGINA DETALHES*/
+
+/*INICIO PAGINA CONSULTA*/
+
+#consulta {
+    background: rgb(255, 187, 0);
+}
+
+/*FIM PAGINA CONSULTA*/
