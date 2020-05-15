@@ -5,7 +5,7 @@
     <h1>Detalhes do Produto</h1>
 
     <a href="/produtos">
-        <img src="{{ asset('images/r.png') }}" class="back"/>
+        <img src="{{ asset('images/r.png') }}" id="back"/>
     </a>
 
         <table border="1" id="t2">
